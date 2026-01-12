@@ -1,22 +1,56 @@
 ---
-// Header component with logo
+// Header component with logo and navigation
+// Get current path for active state
+const currentPath = Astro.url.pathname;
+
+// Helper to check if a path is active
+const isActive = (path: string) => {
+  if (path === '/') {
+    return currentPath === '/';
+  }
+  return currentPath.startsWith(path);
+};
+
+// Style classes for nav links
+const linkBase = "transition-colors font-medium";
+const linkInactive = "text-gray-600 hover:text-primary-600";
+const linkActive = "text-primary-600";
 ---
 
 <header class="bg-white shadow-sm">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center py-4">
-      <!-- Logo -->
-      <div class="flex items-center">
+      <!-- Logo (clickable) -->
+      <a href="/" class="flex items-center">
         <img src="/logo.svg" alt="KodeOps" class="h-8 w-auto" />
-      </div>
+      </a>
       
       <!-- Navigation -->
       <nav class="hidden md:flex space-x-8">
-        <a href="/features" class="text-gray-600 hover:text-primary-600 transition-colors">Features</a>
-        <a href="https://docs.kodeops.dev" class="text-gray-600 hover:text-primary-600 transition-colors">Docs</a>
-        <a href="/roadmap" class="text-gray-600 hover:text-primary-600 transition-colors">Roadmap</a>
-        <a href="/community" class="text-gray-600 hover:text-primary-600 transition-colors">Community</a>
-        <a href="/contributing" class="text-gray-600 hover:text-primary-600 transition-colors">Contributing</a>
+        <a 
+          href="/" 
+          class:list={[linkBase, isActive('/') ? linkActive : linkInactive]}
+        >
+          Home
+        </a>
+        <a 
+          href="/features" 
+          class:list={[linkBase, isActive('/features') ? linkActive : linkInactive]}
+        >
+          Features
+        </a>
+        <a 
+          href="/contributing" 
+          class:list={[linkBase, isActive('/contributing') ? linkActive : linkInactive]}
+        >
+          Contributing
+        </a>
+        <a 
+          href="/community" 
+          class:list={[linkBase, isActive('/community') ? linkActive : linkInactive]}
+        >
+          Community
+        </a>
       </nav>
       
       <!-- CTA -->

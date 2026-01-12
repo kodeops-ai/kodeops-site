@@ -1,0 +1,522 @@
+---
+const pageTitle = "Features - KodeOps";
+
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title={pageTitle}>
+  <Header />
+  
+  <main>
+    <!-- Hero -->
+    <section class="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          AI-Powered SDLC Automation
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          The first open-source, CLI-native solution to automate from ideation to prioritized backlog, 
+          with integrated development workflow and business reporting.
+        </p>
+        <p class="text-lg text-gray-500 max-w-2xl mx-auto">
+          KodeOps operates on three integrated pillars that transform the entire software development lifecycle.
+        </p>
+      </div>
+    </section>
+
+    <!-- Pillar 1: SDLC Automation (Available) -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              Available Now
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Pillar 1: SDLC Automation
+            </h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Transform ideas into structured, prioritized backlogs. Say goodbye to weeks of meetings, 
+              documentation, and planning — describe what you want to build and KodeOps handles the rest.
+            </p>
+            
+            <div class="bg-gray-50 rounded-xl p-6 mb-6">
+              <p class="text-gray-700 italic mb-3">
+                "We need to add user authentication to improve security and user experience."
+              </p>
+              <p class="text-sm text-gray-500">↓ KodeOps automatically generates...</p>
+            </div>
+          </div>
+          
+          <div class="space-y-4">
+            <div class="bg-primary-50 rounded-xl p-6">
+              <div class="flex items-start gap-4">
+                <div class="bg-primary-600 p-2 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-1">Requirements Generation</h3>
+                  <p class="text-gray-600 text-sm">Transform ideas into PRFAQs, MRDs, and PRDs with customer validation</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-primary-50 rounded-xl p-6">
+              <div class="flex items-start gap-4">
+                <div class="bg-primary-600 p-2 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-1">Use Cases & Personas</h3>
+                  <p class="text-gray-600 text-sm">Generate user stories, acceptance criteria, and journey maps</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-primary-50 rounded-xl p-6">
+              <div class="flex items-start gap-4">
+                <div class="bg-primary-600 p-2 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-1">Work Breakdown</h3>
+                  <p class="text-gray-600 text-sm">Convert requirements into prioritized epics, features, and tasks</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-primary-50 rounded-xl p-6">
+              <div class="flex items-start gap-4">
+                <div class="bg-primary-600 p-2 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-1">Backlog Population</h3>
+                  <p class="text-gray-600 text-sm">Create GitHub issues with proper labels, assignments, and dependencies</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-primary-50 rounded-xl p-6">
+              <div class="flex items-start gap-4">
+                <div class="bg-primary-600 p-2 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-1">Continuous Grooming</h3>
+                  <p class="text-gray-600 text-sm">Maintain backlog health with AI-driven prioritization</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pillar 2: Development Workflow (Coming Soon) -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1 space-y-4">
+            <div class="bg-white rounded-xl p-6 opacity-75">
+              <div class="flex items-start gap-4">
+                <div class="bg-green-600 p-2 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-1">GitHub Operations</h3>
+                  <p class="text-gray-600 text-sm">Seamlessly manage branches, issues, pull requests, and commits</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl p-6 opacity-75">
+              <div class="flex items-start gap-4">
+                <div class="bg-green-600 p-2 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-1">Code Quality</h3>
+                  <p class="text-gray-600 text-sm">AI-driven reviews against standards and architectural patterns</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl p-6 opacity-75">
+              <div class="flex items-start gap-4">
+                <div class="bg-green-600 p-2 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-1">CI/CD Integration</h3>
+                  <p class="text-gray-600 text-sm">Automated testing, deployment, and release management</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-white rounded-xl p-6 opacity-75">
+              <div class="flex items-start gap-4">
+                <div class="bg-green-600 p-2 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-1">Team Coordination</h3>
+                  <p class="text-gray-600 text-sm">Smart reviewer assignment and progress tracking</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="order-1 lg:order-2">
+            <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Coming Soon
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Pillar 2: Development Workflow
+            </h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Once your backlog is established, seamlessly execute work with automated branching, 
+              coding, testing, and PR creation. Maintain code quality with AI-driven reviews and 
+              architectural compliance.
+            </p>
+            <p class="text-gray-500">
+              Coordinate releases with automated testing, deployment, and documentation — 
+              all from the command line.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pillar 3: Business Intelligence (Coming Soon) -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Coming Soon
+            </div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              Pillar 3: Business Intelligence & Reporting
+            </h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Keep stakeholders informed with automated business reporting. Generate WBRs, MBRs, 
+              and QBRs with real-time metrics and insights.
+            </p>
+            <p class="text-gray-500">
+              Track progress against objectives with KPI dashboards and maintain 
+              backlog health with automated prioritization and grooming.
+            </p>
+          </div>
+          
+          <div class="space-y-4">
+            <div class="bg-purple-50 rounded-xl p-6 opacity-75">
+              <div class="flex items-start gap-4">
+                <div class="bg-purple-600 p-2 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-1">Executive Dashboards</h3>
+                  <p class="text-gray-600 text-sm">Real-time WBRs, MBRs, QBRs with actionable insights</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-purple-50 rounded-xl p-6 opacity-75">
+              <div class="flex items-start gap-4">
+                <div class="bg-purple-600 p-2 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-1">Velocity Tracking</h3>
+                  <p class="text-gray-600 text-sm">Team performance metrics and predictive analytics</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-purple-50 rounded-xl p-6 opacity-75">
+              <div class="flex items-start gap-4">
+                <div class="bg-purple-600 p-2 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-1">Success Metrics</h3>
+                  <p class="text-gray-600 text-sm">Objective tracking and progress measurement</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="bg-purple-50 rounded-xl p-6 opacity-75">
+              <div class="flex items-start gap-4">
+                <div class="bg-purple-600 p-2 rounded-lg flex-shrink-0">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-gray-900 mb-1">Stakeholder Communication</h3>
+                  <p class="text-gray-600 text-sm">Automated status updates and milestone reporting</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why CLI -->
+    <section class="py-20 bg-gray-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold mb-4">Why CLI-First?</h2>
+          <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+            KodeOps runs in the terminal as a conversational AI assistant. Here's why that matters.
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-gray-800 rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-2">IDE-Agnostic</h3>
+            <p class="text-gray-400">Works with VS Code, Vim, Emacs, JetBrains, or any editor you prefer.</p>
+          </div>
+          
+          <div class="bg-gray-800 rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-2">Composable</h3>
+            <p class="text-gray-400">Integrates with Unix pipelines, shell scripts, and existing automation.</p>
+          </div>
+          
+          <div class="bg-gray-800 rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-2">SSH-Friendly</h3>
+            <p class="text-gray-400">Works seamlessly on remote servers or containerized environments.</p>
+          </div>
+          
+          <div class="bg-gray-800 rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-2">Scriptable</h3>
+            <p class="text-gray-400">Can be incorporated into CI/CD pipelines or custom dev scripts.</p>
+          </div>
+          
+          <div class="bg-gray-800 rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-2">Lightweight</h3>
+            <p class="text-gray-400">No heavy IDE extension overhead. Runs in any terminal.</p>
+          </div>
+          
+          <div class="bg-gray-800 rounded-xl p-6">
+            <h3 class="font-semibold text-lg mb-2">Persistent Memory</h3>
+            <p class="text-gray-400">Thread-based memory persists across sessions. Resume where you left off.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Details -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Built for Developers</h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Open source, model-agnostic, and designed with security in mind.
+          </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="border border-gray-200 rounded-xl p-8">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Model Agnostic</h3>
+            <p class="text-gray-600 mb-4">
+              Use your preferred AI provider. KodeOps supports multiple models:
+            </p>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                OpenAI GPT-4 models
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Anthropic Claude models
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Google Gemini models
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Local models via Ollama
+              </li>
+            </ul>
+          </div>
+          
+          <div class="border border-gray-200 rounded-xl p-8">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Security First</h3>
+            <p class="text-gray-600 mb-4">
+              Your code stays yours. KodeOps is designed with security at its core:
+            </p>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Local-first processing
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Zero retention on external servers
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Minimal permission scopes
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Full audit logs and transparency
+              </li>
+            </ul>
+          </div>
+          
+          <div class="border border-gray-200 rounded-xl p-8">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Language Agnostic</h3>
+            <p class="text-gray-600 mb-4">
+              Works with any tech stack on GitHub:
+            </p>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Python, JavaScript, TypeScript, Go, Rust
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Java, C#, Ruby, PHP, and more
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                React, Django, Rails, Spring, .NET
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Terraform, CloudFormation, Pulumi
+              </li>
+            </ul>
+          </div>
+          
+          <div class="border border-gray-200 rounded-xl p-8">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Extensible via MCP</h3>
+            <p class="text-gray-600 mb-4">
+              Integrate with your existing tools via Model Context Protocol:
+            </p>
+            <ul class="space-y-2 text-gray-600">
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Issue trackers (Jira, Linear)
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Messaging (Slack, email)
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Documentation (Confluence, Notion)
+              </li>
+              <li class="flex items-center gap-2">
+                <svg class="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                Custom APIs via MCP servers
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-primary-600">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">
+          Ready to automate your SDLC?
+        </h2>
+        <p class="text-xl text-primary-100 mb-8">
+          Free and open source under Apache 2.0. Get started in minutes.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="/download" 
+            class="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
+          >
+            Install KodeOps
+          </a>
+          <a 
+            href="https://github.com/kodeops-ai/kdo" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors inline-flex items-center justify-center gap-2"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

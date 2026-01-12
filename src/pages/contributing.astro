@@ -1,0 +1,319 @@
+---
+const pageTitle = "Contributing - KodeOps";
+
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title={pageTitle}>
+  <Header />
+  
+  <!-- Hero -->
+  <section class="bg-gradient-to-br from-primary-50 to-primary-100 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Contributing to KodeOps</h1>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        KodeOps is open source under Apache 2.0. We welcome contributions of all kinds.
+      </p>
+    </div>
+  </section>
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+    <!-- Quick Links -->
+    <div class="bg-gray-50 rounded-2xl p-8 mb-12">
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a 
+          href="https://github.com/kodeops-ai/kdo" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors"
+        >
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          GitHub Repository
+        </a>
+        <a 
+          href="https://github.com/kodeops-ai/kdo/issues" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 border-2 border-gray-900 text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+        >
+          View Open Issues
+        </a>
+        <a 
+          href="https://github.com/kodeops-ai/kdo/discussions" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 border-2 border-gray-900 text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+        >
+          Join Discussions
+        </a>
+      </div>
+    </div>
+
+    <!-- Ways to Contribute -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Ways to Contribute</h2>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Feedback -->
+        <div class="border border-gray-200 rounded-xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="bg-blue-100 p-2 rounded-lg">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900">Share Feedback</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            The most valuable contribution right now is feedback. Tell us what works, what doesn't, and what you'd like to see.
+          </p>
+          <a href="/community" class="text-primary-600 hover:text-primary-700 font-medium inline-flex items-center gap-1">
+            Learn how to give feedback
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Bug Reports -->
+        <div class="border border-gray-200 rounded-xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="bg-red-100 p-2 rounded-lg">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900">Report Bugs</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Found something broken? Open an issue with steps to reproduce and we'll investigate.
+          </p>
+          <a 
+            href="https://github.com/kodeops-ai/kdo/issues/new?template=bug.yml" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-primary-600 hover:text-primary-700 font-medium inline-flex items-center gap-1"
+          >
+            Open a bug report
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Feature Requests -->
+        <div class="border border-gray-200 rounded-xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="bg-green-100 p-2 rounded-lg">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900">Request Features</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Have an idea that would make KodeOps better? We'd love to hear it.
+          </p>
+          <a 
+            href="https://github.com/kodeops-ai/kdo/issues/new?template=feature_request.yml" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-primary-600 hover:text-primary-700 font-medium inline-flex items-center gap-1"
+          >
+            Request a feature
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Code Contributions -->
+        <div class="border border-gray-200 rounded-xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="bg-purple-100 p-2 rounded-lg">
+              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900">Contribute Code</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Ready to dive in? Check out our good first issues or pick something from the backlog.
+          </p>
+          <a 
+            href="https://github.com/kodeops-ai/kdo/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-primary-600 hover:text-primary-700 font-medium inline-flex items-center gap-1"
+          >
+            View good first issues
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Documentation -->
+        <div class="border border-gray-200 rounded-xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="bg-amber-100 p-2 rounded-lg">
+              <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900">Improve Docs</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Found a typo? Something unclear? Documentation improvements are always welcome.
+          </p>
+          <a 
+            href="https://github.com/kodeops-ai/kdo/tree/main/docs" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-primary-600 hover:text-primary-700 font-medium inline-flex items-center gap-1"
+          >
+            View documentation
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Spread the Word -->
+        <div class="border border-gray-200 rounded-xl p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="bg-pink-100 p-2 rounded-lg">
+              <svg class="w-6 h-6 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-gray-900">Spread the Word</h3>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Star us on GitHub, share with your team, or write about your experience using KodeOps.
+          </p>
+          <a 
+            href="https://github.com/kodeops-ai/kdo" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-primary-600 hover:text-primary-700 font-medium inline-flex items-center gap-1"
+          >
+            Star on GitHub
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Development Setup -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Development Setup</h2>
+      
+      <div class="bg-gray-900 rounded-xl p-6 text-white font-mono text-sm overflow-x-auto">
+        <div class="space-y-4">
+          <div>
+            <span class="text-gray-500"># Clone the repository</span>
+            <div>git clone https://github.com/kodeops-ai/kdo.git</div>
+            <div>cd kdo</div>
+          </div>
+          <div>
+            <span class="text-gray-500"># Install dependencies</span>
+            <div>go mod download</div>
+          </div>
+          <div>
+            <span class="text-gray-500"># Build</span>
+            <div>go build -o kdo ./cmd/kdo</div>
+          </div>
+          <div>
+            <span class="text-gray-500"># Run tests</span>
+            <div>go test ./...</div>
+          </div>
+        </div>
+      </div>
+      
+      <p class="text-gray-600 mt-4">
+        For detailed setup instructions, see the 
+        <a 
+          href="https://github.com/kodeops-ai/kdo/blob/main/CONTRIBUTING.md" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary-600 hover:text-primary-700"
+        >CONTRIBUTING.md</a> 
+        file in the repository.
+      </p>
+    </section>
+
+    <!-- Pull Request Guidelines -->
+    <section class="mb-16">
+      <h2 class="text-2xl font-bold text-gray-900 mb-6">Pull Request Guidelines</h2>
+      
+      <div class="space-y-4">
+        <div class="flex items-start gap-4">
+          <div class="bg-primary-100 text-primary-600 font-bold w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">1</div>
+          <div>
+            <h3 class="font-semibold text-gray-900">Fork & Branch</h3>
+            <p class="text-gray-600">Fork the repo and create a branch from <code class="bg-gray-100 px-2 py-0.5 rounded text-sm">main</code> for your changes.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start gap-4">
+          <div class="bg-primary-100 text-primary-600 font-bold w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">2</div>
+          <div>
+            <h3 class="font-semibold text-gray-900">Make Changes</h3>
+            <p class="text-gray-600">Write clear, well-documented code. Follow existing patterns and conventions.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start gap-4">
+          <div class="bg-primary-100 text-primary-600 font-bold w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">3</div>
+          <div>
+            <h3 class="font-semibold text-gray-900">Test</h3>
+            <p class="text-gray-600">Add tests for new functionality. Ensure all existing tests pass.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start gap-4">
+          <div class="bg-primary-100 text-primary-600 font-bold w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">4</div>
+          <div>
+            <h3 class="font-semibold text-gray-900">Submit PR</h3>
+            <p class="text-gray-600">Open a pull request with a clear description of the changes and any related issues.</p>
+          </div>
+        </div>
+        
+        <div class="flex items-start gap-4">
+          <div class="bg-primary-100 text-primary-600 font-bold w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0">5</div>
+          <div>
+            <h3 class="font-semibold text-gray-900">Review</h3>
+            <p class="text-gray-600">Address any feedback from maintainers. We aim to review PRs within a few days.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code of Conduct -->
+    <section class="bg-gray-50 rounded-2xl p-8">
+      <h2 class="text-2xl font-bold text-gray-900 mb-4">Code of Conduct</h2>
+      <p class="text-gray-600 mb-4">
+        We're committed to providing a welcoming and inclusive environment for everyone. 
+        Please read our Code of Conduct before participating.
+      </p>
+      <a 
+        href="https://github.com/kodeops-ai/kdo/blob/main/CODE_OF_CONDUCT.md" 
+        target="_blank"
+        rel="noopener noreferrer"
+        class="text-primary-600 hover:text-primary-700 font-medium inline-flex items-center gap-1"
+      >
+        Read our Code of Conduct
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </section>
+  </main>
+</Layout>
