@@ -1,4 +1,4 @@
-# KodeOps Marketing Site
+# Actualyze Marketing Site
 
 Modern, conversion-focused marketing website built with Astro.
 
@@ -19,7 +19,7 @@ npm run dev
 
 ## Deployment
 
-Deploys automatically to `kodeops.dev` via Cloudflare Pages on push to main.
+Deploys automatically to `actualyze.dev` via Cloudflare Pages on push to main.
 
 ## Pages
 

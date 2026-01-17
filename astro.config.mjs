@@ -3,7 +3,7 @@ import tailwind from '@astrojs/tailwind';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://kodeops.dev',
+  site: 'https://actualyze.dev',
   integrations: [
     tailwind(),
     sitemap()
